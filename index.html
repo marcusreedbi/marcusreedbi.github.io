@@ -97,7 +97,7 @@
         </dl>
         <p><strong>Tools:</strong> Excel, MySQL, Power BI, Star Schema</p>
         <a class="project-action" href="amazon-india-sales.png?v=2">View report preview</a>
-        <figure><a href="amazon-model.png"><img class="report-preview" src="amazon-model.png" alt="Power BI model showing fact_sales linked to the shipment, location, and product dimensions." loading="lazy"></a><figcaption>Amazon India Sales star schema in Power BI. Select the image to view it at full size.</figcaption></figure>
+        <figure><a href="amazon-model.png?v=2"><img class="report-preview" src="amazon-model.png?v=2" alt="Power BI model showing fact_sales linked to the shipment, location, and product dimensions." loading="lazy"></a><figcaption>Amazon India Sales star schema in Power BI. Select the image to view it at full size.</figcaption></figure>
 <details>
             <summary>Project approach and scope</summary>
             <h4>The question</h4>
@@ -115,12 +115,14 @@
     <article class="card" aria-labelledby="fraud-title">
 <h3 id="fraud-title">Card Fraud Explorer</h3>
 <p class="project-date">Transaction fraud · Card portfolio · Power BI</p>
-<figure><a href="fraud-explorer.png"><img class="report-preview" src="fraud-explorer.png" alt="Fraud Explorer with a monthly fraud-rate trend, headline metrics, and channel comparison." loading="lazy"></a><figcaption>Fraud Explorer report preview. Select the image to view it at full size.</figcaption></figure>
-<figure><a href="fraud-portfolio.png"><img class="report-preview" src="fraud-portfolio.png" alt="Card Portfolio with card inventory, cards by brand, and fraud rates and case counts by card type." loading="lazy"></a><figcaption>Card Portfolio report preview. Select the image to view it at full size.</figcaption></figure>
+<figure><a href="fraud-explorer.png?v=2"><img class="report-preview" src="fraud-explorer.png?v=2" alt="Fraud Explorer with a monthly fraud-rate trend, headline metrics, and channel comparison." loading="lazy"></a><figcaption>Fraud Explorer report preview. Select the image to view it at full size.</figcaption></figure>
+<figure><a href="fraud-portfolio.png?v=2"><img class="report-preview" src="fraud-portfolio.png?v=2" alt="Card Portfolio with card inventory, cards by brand, and fraud rates and case counts by card type." loading="lazy"></a><figcaption>Card Portfolio report preview. Select the image to view it at full size.</figcaption></figure>
+<figure><a href="fraud-model.png?v=2"><img class="report-preview" src="fraud-model.png?v=2" alt="Power BI relationship diagram for the card fraud report." loading="lazy"></a><figcaption>Card Fraud Power BI data model. Select the image to view it at full size.</figcaption></figure>
+<details><summary>Project approach and scope</summary>
 <h4>The question</h4><p>Which transaction channels and card types had the most recorded fraud, and which had the highest fraud rates among labeled transactions?</p>
 <h4>The approach</h4><p>Built a Power BI star schema with transaction and card snapshot fact tables and card, customer, date, and merchant-category dimensions. Used fraud labels to calculate case counts, rates, gross exposure, and label coverage.</p>
 <h4>The report</h4><p>Fraud Explorer compares channels and tracks monthly fraud rates, with filters for card type and merchant category. Card Portfolio compares the card-brand mix and shows fraud rates by card type alongside fraud counts and labeled transaction volumes.</p>
-<h4>What the dataset shows</h4><p>Online transactions accounted for 8,779 of 13,332 recorded fraud cases (66%) and about 75% of the $1.75 million in gross fraud exposure. Prepaid debit had the highest fraud rate (0.22%), while regular debit had the most cases across all channels. The overall rate was 0.15% among labeled transactions, which covered 67% of transactions.</p>
+<h4>What the dataset shows</h4><p>Online transactions accounted for 8,779 of 13,332 recorded fraud cases (66%) and about 75% of the $1.75 million in gross fraud exposure. Prepaid debit had the highest fraud rate (0.22%), while regular debit had the most cases across all channels. The overall rate was 0.15% among labeled transactions, which covered 67% of transactions.</p><h4>Scope and definitions</h4><p class="scope">Fraud rate divides fraud-labeled transactions by all labeled transactions. Gross fraud exposure sums the absolute amounts of fraud-labeled transactions. Findings reflect the unfiltered report, and channel and card-type results are shown separately.</p></details>
 </article>
 <article class="card" aria-labelledby="leasing-title">
         <h3 id="leasing-title">Leasing Funnel Performance Dashboard</h3>
