@@ -124,6 +124,21 @@
 <h4>The report</h4><p>Fraud Explorer compares channels and tracks monthly fraud rates, with filters for card type and merchant category. Card Portfolio compares the card-brand mix and shows fraud rates by card type alongside fraud counts and labeled transaction volumes.</p>
 <h4>What the dataset shows</h4><p>Online transactions accounted for 8,779 of 13,332 recorded fraud cases (66%) and about 75% of the $1.75 million in gross fraud exposure. Prepaid debit had the highest fraud rate (0.22%), while regular debit had the most cases across all channels. The overall rate was 0.15% among labeled transactions, which covered 67% of transactions.</p><h4>Scope and definitions</h4><p class="scope">Fraud rate divides fraud-labeled transactions by all labeled transactions. Gross fraud exposure sums the absolute amounts of fraud-labeled transactions. Findings reflect the unfiltered report, and channel and card-type results are shown separately.</p></details>
 </article>
+<article class="card" aria-labelledby="patient-analytics">
+<h3 id="patient-analytics">Patient Analytics Dashboard</h3>
+<p class="project-date">Healthcare analytics · MySQL · Microsoft Fabric · Power BI</p>
+<p>Our team built an end-to-end pipeline that turned a Kaggle healthcare CSV into structured data for hospital reporting.</p>
+<figure><a href="patient-analytics.png"><img class="report-preview" src="patient-analytics.png" width="1375" height="773" alt="Patient Analytics Dashboard showing patient and doctor counts, billing by insurer, admissions by type, and medication counts by condition."></a><figcaption>Power BI dashboard preview. Select the image to view it at full size.</figcaption></figure>
+<details><summary>Project approach and scope</summary>
+<h4>The question</h4><p>How can a raw healthcare CSV support repeatable analysis of patient demographics, admissions, medications, and billing?</p>
+<h4>The approach</h4><p>We acquired the dataset from Kaggle, handled missing values, standardized condition and medication categories, and validated admission and discharge dates. We designed a relational schema, loaded the cleaned records into MySQL and Microsoft Fabric, and tested query performance.</p>
+<h4>The report</h4><p>Power BI summarizes patient and doctor counts, billing, admissions, and medication use. Year and gender filters support exploration. In the dashboard snapshot, Cigna had the highest total billing among the insurers shown, at $39.84 million.</p>
+<h4>Goals and results</h4><div style="overflow-x:auto"><table style="width:100%;min-width:36rem;border-collapse:collapse;text-align:left" cellpadding="8"><thead><tr><th scope="col">Objective</th><th scope="col">Target</th><th scope="col">Result</th></tr></thead><tbody>
+<tr><th scope="row">Data storage</th><td>Move the CSV into MySQL and Fabric.</td><td>Loaded the cleaned data into both environments.</td></tr>
+<tr><th scope="row">Data integrity</th><td>Standardize admission and discharge dates.</td><td>Validated dates and standardized categorical fields.</td></tr>
+<tr><th scope="row">Reporting</th><td>Identify healthcare trends and KPIs.</td><td>Delivered a Power BI report on patient trends, admissions, medications, and billing.</td></tr>
+<tr><th scope="row">Scalability</th><td>Support future data loads.</td><td>Designed the schema to accept additional patient records.</td></tr>
+</tbody></table></div></details></article>
 </section>
 <section aria-labelledby="skills">
     <h2 id="skills">Skills</h2>
